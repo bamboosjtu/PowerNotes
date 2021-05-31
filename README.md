@@ -1,5 +1,6 @@
 # Introduction
 
+<<<<<<< HEAD
 ## Web服务器概述
 
 ### 最简单的web服务器
@@ -11,4 +12,7 @@
 4. 发送HTTP响应报文序列化后的字节流
 
 ### WSGI
+=======
+learning Django 123456.
+>>>>>>> d8c2889c4f59da169e71cc55660bfdb320f904ce
 
