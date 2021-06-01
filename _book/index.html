@@ -126,9 +126,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="Reference.html">
+        <li class="chapter " data-level="1.4" data-path="reference.html">
             
-                <a href="Reference.html">
+                <a href="reference.html">
             
                     
                     Reference
@@ -184,7 +184,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
+                                <h1 id="&#x80CC;&#x666F;&#x77E5;&#x8BC6;">&#x80CC;&#x666F;&#x77E5;&#x8BC6;</h1>
 <h2 id="web&#x670D;&#x52A1;&#x5668;&#x6982;&#x8FF0;">Web&#x670D;&#x52A1;&#x5668;&#x6982;&#x8FF0;</h2>
 <h3 id="&#x6700;&#x7B80;&#x5355;&#x7684;web&#x670D;&#x52A1;&#x5668;">&#x6700;&#x7B80;&#x5355;&#x7684;web&#x670D;&#x52A1;&#x5668;</h3>
 <p>&#x6700;&#x7B80;&#x5355;&#x7684;Web&#x670D;&#x52A1;&#x5668;&#x7684;&#x539F;&#x7406;&#x53EF;&#x4EE5;&#x5229;&#x7528;python&#x7684;<code>socket</code>&#x6A21;&#x5757;&#x5B9E;&#x73B0;&#xFF0C;&#x6B65;&#x9AA4;&#x5927;&#x81F4;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -195,6 +195,37 @@
 <li>&#x53D1;&#x9001;HTTP&#x54CD;&#x5E94;&#x62A5;&#x6587;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;&#x5B57;&#x8282;&#x6D41;</li>
 </ol>
 <h3 id="wsgi">WSGI</h3>
+<p>WSGI&#x662F;&#x4E00;&#x79CD;Web&#x534F;&#x8BAE;&#xFF0C;&#x5305;&#x62EC;WSGI Gateway&#x548C;WSGI Application&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;WSGI Application&#xFF0C;&#x9700;&#x8981;&#x80FD;&#x591F;&#x63A5;&#x53D7;&#x4E00;&#x548C;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x548C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7528;&#x6765;&#x8BBE;&#x7F6E;response&#x7684;<strong>&#x72B6;&#x6001;</strong>&#x548C;<strong>Header</strong>&#x3002;</p>
+<ul>
+<li>Gunicorn&#xFF1A;WSGI&#x670D;&#x52A1;&#x5668;&#xFF0C;</li>
+<li>Werkzeug&#xFF1A;WSGI&#x7684;&#x5E95;&#x5C42;&#x5E93;&#x3002;</li>
+</ul>
+<h2 id="django&#x5F00;&#x53D1;&#x6846;&#x67B6;">Django&#x5F00;&#x53D1;&#x6846;&#x67B6;</h2>
+<h3 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h3>
+<p>Django&#x7684;&#x7279;&#x70B9;&#x662F;&#x5168;&#x529F;&#x80FD;&#xFF0C;&#x7279;&#x70B9;&#x5305;&#x62EC;&#x4F46;&#x4E0D;&#x9650;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li>HTTP&#x5C01;&#x88C5;</li>
+<li>ORM</li>
+<li>admin</li>
+<li>Form</li>
+<li>template</li>
+<li>session&#x548C;cookie</li>
+<li>&#x6743;&#x9650;</li>
+<li>&#x5B89;&#x5168;</li>
+<li>cache</li>
+<li>Logging</li>
+<li>sitemap</li>
+<li>RSS</li>
+</ul>
+<h3 id="&#x7ED3;&#x6784;">&#x7ED3;&#x6784;</h3>
+<p>Django&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;WSGI&#x7684;MTV&#x6846;&#x67B6;&#x3002;</p>
+<pre><code class="lang-mermaid">graph LR
+    A[&#x4E2D;&#x95F4;&#x4EF6;] --&gt; B[URL] --&gt; C[View] --&gt; D[Model] --&gt; E[DB]
+</code></pre>
+<pre><code class="lang-mermaid">graph RL
+    E[DB] --&gt; D[Model] --&gt; C[View] --&gt; B2[Form] --&gt; B1[&#x6A21;&#x677F;] --&gt; A[&#x4E2D;&#x95F4;&#x4EF6;]
+</code></pre>
 
                                 
                                 </section>
@@ -234,7 +265,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"附录A：环境配置","level":"1.2","depth":1,"path":"环境配置.md","ref":"环境配置.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2021-05-31T15:18:14.250Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-31T15:20:15.323Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"附录A：环境配置","level":"1.2","depth":1,"path":"环境配置.md","ref":"环境配置.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2021-06-01T14:55:33.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-01T14:56:07.308Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -242,10 +273,6 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
