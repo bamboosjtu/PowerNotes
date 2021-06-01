@@ -43,13 +43,21 @@ Django的特点是全功能，特点包括但不限于：
 ### 结构
 Django是一个基于WSGI的MTV框架。
 
-
+- 请求
 ```mermaid
-graph LR
-    A[中间件] --> B[URL] --> C[View] --> D[Model] --> E[DB]
+graph LR;
+    A[中间件]-->B[URL];
+    B-->C[View];
+    C-->D[Model];
+    D-->E[DB];
 ```
 
+- 响应
 ```mermaid
-graph RL
-    E[DB] --> D[Model] --> C[View] --> B2[Form] --> B1[模板] --> A[中间件]
+graph RL;
+    E[DB]-->D[Model];
+    D-->C[View];
+    C-->B2[Form];
+    B2-->B1[模板];
+    B1--> A[中间件];
 ```

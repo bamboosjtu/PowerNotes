@@ -12,9 +12,14 @@
         
         
     
+    
     <link rel="stylesheet" href="gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
@@ -44,6 +49,9 @@
         
     
         
+    
+
+
     
 
         
@@ -220,12 +228,26 @@
 </ul>
 <h3 id="&#x7ED3;&#x6784;">&#x7ED3;&#x6784;</h3>
 <p>Django&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;WSGI&#x7684;MTV&#x6846;&#x67B6;&#x3002;</p>
-<pre><code class="lang-mermaid">graph LR
-    A[&#x4E2D;&#x95F4;&#x4EF6;] --&gt; B[URL] --&gt; C[View] --&gt; D[Model] --&gt; E[DB]
-</code></pre>
-<pre><code class="lang-mermaid">graph RL
-    E[DB] --&gt; D[Model] --&gt; C[View] --&gt; B2[Form] --&gt; B1[&#x6A21;&#x677F;] --&gt; A[&#x4E2D;&#x95F4;&#x4EF6;]
-</code></pre>
+<ul>
+<li><p>&#x8BF7;&#x6C42;</p>
+<div class="mermaid">
+graph LR;
+  A[&#x4E2D;&#x95F4;&#x4EF6;]--&gt;B[URL];
+  B--&gt;C[View];
+  C--&gt;D[Model];
+  D--&gt;E[DB];
+</div>
+</li>
+<li><p>&#x54CD;&#x5E94;</p>
+<div class="mermaid">
+graph RL;
+  E[DB]--&gt;D[Model];
+  D--&gt;C[View];
+  C--&gt;B2[Form];
+  B2--&gt;B1[&#x6A21;&#x677F;];
+  B1--&gt; A[&#x4E2D;&#x95F4;&#x4EF6;];
+</div></li>
+</ul>
 
                                 
                                 </section>
@@ -265,14 +287,19 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"附录A：环境配置","level":"1.2","depth":1,"path":"环境配置.md","ref":"环境配置.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2021-06-01T14:55:33.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-01T14:56:07.308Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"附录A：环境配置","level":"1.2","depth":1,"path":"环境配置.md","ref":"环境配置.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mermaid-gb3"],"pluginsConfig":{"mermaid-gb3":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2021-06-01T15:07:03.580Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-01T15:07:31.766Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -298,6 +325,8 @@
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
+    <script src="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>
