@@ -14,7 +14,6 @@ EOL1 = b'\n\n'
 EOL2 = b'\n\r\n'
 
 
-
 def handle_connection(conn, addr):
     global count
     print(f"conn is {conn},\naddr is {addr}")
@@ -22,10 +21,9 @@ def handle_connection(conn, addr):
     while EOL1 not in request and EOL2 not in request:
         request += conn.recv(1024)
         # print(request)
-    body = '''Hello, world！<h1> from the5fire 《DJango企业开发实战》</h1>''' + str(count)
+    body = '''Hello, world！<h1> Simple Web Server by Python. </h1>''' + str(count)
     response_params =[
         'HTTP/1.0 200 OK',
-        'Date: Sun, 27 may 2018 01:01:01 GMT',
         'Content-Type: text/html; charset=utf-8',
         'Content-Length: {}\r\n'.format(len(body.encode())),
         body,
@@ -34,7 +32,10 @@ def handle_connection(conn, addr):
     conn.send(response.encode())
     conn.close()
 
+
 def main():
+    # socket.AF_INET用于服务器间通信
+    # socket.SOCK_STREAM用于TCP的流式socket通信
     serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     serversocket.bind(('127.0.0.1',8000))
