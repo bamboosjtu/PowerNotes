@@ -1,0 +1,16 @@
+digraph G{
+
+    node[shape=record, height=.1, fontname="Heiti"];
+    node_161[label = "<f0> SDJ 161-1985 |<f1> 电力系统设计技术规程（试行）", style=dashed];
+    node_325[label = "<f0> SD 325 |<f1> 电力系统电压和无功电力技术导则"];
+    node_5429[label = "<f0> DL/T 5429-2009 |<f1> 电力系统设计技术规程 |<f2> build"];
+    node_755[label = "<f0> DL 755 |<f1> 电力系统安全稳定导则"];
+    node_044[label = "<f0> 原水电部(82)电计字第44号文 |<f1> 电力工程经济分析暂行条例"];
+
+    node_161 -> node_5429[style=bold, color=blue];
+
+    node_5429 -> node_755;
+    node_5429 -> node_325;
+    node_5429 -> node_044;
+
+}

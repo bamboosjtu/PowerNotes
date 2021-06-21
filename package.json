@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gitbook serve",
-    "env": ". .env"
+    "env": ". .env",
+    "power_png": "dot -Tpng  ./电气工程/standards.dot -o ./电气工程/standards.png"
   },
   "author": "",
   "license": "ISC",
