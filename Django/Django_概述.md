@@ -31,10 +31,6 @@ WSGI Application是个可重复调用的可调用对象，可以是函数、类�
 - start_response是一个函数，接收2个参数，一个是HTTP状态码，一个HTTP消息中的响应头。
 
 
-
-
-
-
 ## Django开发框架
 
 ### 框架特点
@@ -53,6 +49,12 @@ Django的特点是全功能，特点包括但不限于：
 - sitemap
 - RSS
 
+
+### 文档结构
+Django的[官方文档](https://docs.djangoproject.com/en/3.2/)，3.2是一个长期支持版本。
+
+官方文档结构如下
+![Django官方文档结构](./Django文档结构.png)
 
 ### 目录结构
 Django是一个基于WSGI的MTV框架。
