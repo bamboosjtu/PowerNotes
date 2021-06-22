@@ -14,11 +14,14 @@
     - 父子组件传递data和event
     - eventBus 
     - html/css/js的方式构建组件
+    - slot
+    - 动态组件、keep-alive
 5. vuetify
     - 理解bootstrap的12grid布局
 6. vue-router
 7. ajax
 8. vuex
+9. form
 
 
 
