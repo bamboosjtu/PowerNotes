@@ -7,7 +7,7 @@
         * [附录C：Django官方文档](https://docs.djangoproject.com/en/3.2/)
         * [Reference](reference.md)
     * [Vue.js](./Vue/Vue_概述.md)
-        * [简单案例](./Vue/QuickStart.md)
+        * [不完全避坑指南](./Vue/QuickStart.md)
     * 投资
         * [重点关注企业](./经济金融/重点关注企业.md)
     * 电气工程
