@@ -71,5 +71,9 @@ Django的路由是串联的两级，第一级是站点文件夹内的urls.py，�
 网站路由把访问的url与处理的业务逻辑挂钩，可以[基于函数](https://docs.djangoproject.com/en/3.2/topics/http/views/)，也可以[基于类](https://docs.djangoproject.com/en/3.2/topics/class-based-views/)。
 
 - 页面显示层（templates/*.html）
+这里会用到`{{ FOO }}`、`{% ETAG %}`等的模板命令，django的模板引擎还可以换成Jinja2，[模型字段的引用可以参考官方文档](https://docs.djangoproject.com/en/3.2/ref/models/instances/)。
 
 - 表单输入（forms.py）
+Django可以事先定义好表单，然后在模板中使用。表单既可以继承自forms.Form类，[字段设置参考这里](https://docs.djangoproject.com/en/3.2/ref/forms/fields/)，也可以继承自forms.ModelForm，直接复用Model的代码，[详情可参考官方文档](https://docs.djangoproject.com/en/3.2/topics/forms/modelforms/)。此外，django的表单还可以[对输入的数据进行校验](https://docs.djangoproject.com/en/3.2/ref/forms/validation/#cleaning-a-specific-field-attribute)。
+
+
