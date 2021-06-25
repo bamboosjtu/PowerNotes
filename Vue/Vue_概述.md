@@ -10,10 +10,11 @@
     8. 自定义v-directives
     9. filters
     10. mixins
-    11. 动画与过渡
+    11. animations(css/js)与transition
 - Vue常用插件
     - vue-resource/ajax
     - vue-router
     - vuex
     - vuetify
     - element-ui
+    - animate css
