@@ -15,3 +15,4 @@
 7. 配置用户权限：`GRANT ALL PRIVILEGES ON <数据库名>.<表名> TO <用户名>@'%';`
 8. 刷新配置：`FLUSH PRIVILEGES;`
 9. 修改配置文件（可选）：`/etc/mysql/mysql.conf.d/mysqld.cnf`
+10. 安装python包：`pipenv install pymysql && pipenv install cryptography`
