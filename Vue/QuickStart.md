@@ -6,8 +6,8 @@
 - [4小时快速玩转vue.js](https://www.bilibili.com/video/BV1aK4y1K7xx)：无vue的要求，大致理解Vue框架的体系，Vue项目结构，Vue-router/Vuex/Ajax。
 - [使用RESTful API探索艺术世界](https://www.bilibili.com/video/BV1kQ4y1R7xQ)：了解下前后端交互使用的api。
 - [Vuetify教程](https://www.bilibili.com/video/BV1ib411a7ND)：纯英文，版本有点老，学习如何使用vuetify官方文档。
-- [Bootstrap快速上手](https://www.bilibili.com/video/BV1aK4y1K7xx)：理解Vue的12 grid的布局。
-
+- [Bootstrap快速上手](https://www.bilibili.com/video/BV1aK4y1K7xx)：理解Vue的12 grid的布局，vuetify和bootstrap间没有依赖关系，但是都是栅格布局。
+- [MS Reactor: Vue.js开发入门](https://www.bilibili.com/video/BV1W5411T7c5)：从html/css/js的角度理解vue.js，并搭建一个简单的应用。
 ## 一. 环境准备
 我遇到的第一个坑是如何构建出类似whaleweb的项目目录，有一个困扰了我很久的问题是本项目除了vue、vue-cli这几个包外，还有vuetify、@mdi/font等包，尤其是`@mdi/font`这个包未安装会导致`v-icon`无法正确显示。
 
