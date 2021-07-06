@@ -32,3 +32,6 @@
 9. Custom Directives
 10. Custom Filters
 11. Custom Minxins
+12. Ajax
+13. VueX & Authentication
+14. Form Input Validition
