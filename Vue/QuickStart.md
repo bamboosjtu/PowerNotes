@@ -7,9 +7,10 @@
 - [使用RESTful API探索艺术世界](https://www.bilibili.com/video/BV1kQ4y1R7xQ)：了解下前后端交互使用的api。
 - [Vuetify教程](https://www.bilibili.com/video/BV1ib411a7ND)：纯英文，版本有点老，学习如何使用vuetify官方文档。
 - [Bootstrap快速上手](https://www.bilibili.com/video/BV1aK4y1K7xx)：理解Vue的12 grid的布局，vuetify和bootstrap间没有依赖关系，但是都是栅格布局。
-- MS Reactor系列
+- ([MS Reactor系列 - 开始使用 Vue.js](https://docs.microsoft.com/zh-cn/learn/paths/vue-first-steps/)
     - [Vue.js开发入门](https://www.bilibili.com/video/BV1W5411T7c5)：从html/css/js的角度理解vue.js，并搭建一个简单的应用。
-    - [Vue.js创建动态页面](https://www.bilibili.com/video/BV1Ko4y1C7xG?t=5)：数据渲染和表单输入。
+    - [Vue.js创建动态页面](https://www.bilibili.com/video/BV1Ko4y1C7xG)：数据渲染和表单输入。
+    - [Vue CLI和单文件组件入门](https://www.bilibili.com/video/BV1ug411u7q5)：Vue.js的数据和事件，以及简单的工程化单页面应用入门。
     
 ## 一. 环境准备
 我遇到的第一个坑是如何构建出类似whaleweb的项目目录，有一个困扰了我很久的问题是本项目除了vue、vue-cli这几个包外，还有vuetify、@mdi/font等包，尤其是`@mdi/font`这个包未安装会导致`v-icon`无法正确显示。
