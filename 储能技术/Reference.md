@@ -7,4 +7,4 @@
 
 # Videos
 
-* [电力储能技术发展现状及趋势2020.04](https://www.bilibili.com/video/BV1Bo4y1o7za)
+* [电力储能技术发展现状及趋势](https://www.bilibili.com/video/BV1Bo4y1o7za),惠东, 中国电科院, 2020-04.
